@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Autohjælp On-load Motion</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: #ffffff;
+      padding: 40px;
+    }
+
+    .video {
+      display: block;
+
+      width: min(900px, 90vw);
+      height: auto;
+
+      border-radius: 18px;
+
+      box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.08);
+
+      object-fit: contain;
+    }
+  </style>
+</head>
+
+<body>
+
+  <video
+    class="video"
+    autoplay
+    muted
+    loop
+    playsinline
+  >
+    <source src="OnLoad_motion.mp4" type="video/mp4">
+    Din browser understøtter ikke video.
+  </video>
+
+</body>
+</html>
+
